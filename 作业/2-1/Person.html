@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script type="text/javascript">
+    function Person(props) {
+        this.name = props.name;
+        console.log(props.toString());
+        console.log(props.count);
+    }
+    var lx = Person('lin');
+    var zy = Person('zhang');
+
+    function Complex(a, b) {
+        this.a = a;
+        this.b = b;
+    }
+    Complex.prototype.mul = function(that) {
+        return new Complex(this.a*that.a, this.b*that.b);
+    }
+    Complex.prototype.add = function(that) {
+        return new Complex(this.a + that.a, this.b + that.b);
+    }
+    Complex.prototype.mag = function(that) {
+        return Math.sqrt(this.a*this.a, this.b*this.b);
+    }
+    Complex.prototype.neg = function(that) {
+        return new Complex(this.a*(-1), this.b*(-1));
+    }
+    Complex.prototype.equal = function(that) {
+        if ((this.a == that.b) && (this.b == this.b)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    Complex.prototype.toString = function() {
+        return "{" + this.a + "," + this.b + "}";
+    }
+    </script>
+</body>
+</html>

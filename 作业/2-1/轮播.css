@@ -1,0 +1,74 @@
+#body{
+    width: 900px;
+    height: 900px;
+}
+#picture{
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+#picul{
+    width: 3000px;
+    height: 400px;
+    left: 0px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.picli{
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.img{
+    float: left;
+    height: 400px;
+    width: 600px;
+    cursor: pointer;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    line-height: 28px;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    opacity: 0.6;
+    color: #fff;
+    display: none;
+}
+#prev{
+    left: 10px;
+}
+#next{
+    right: 10px;
+}
+#picture:hover .arrow{
+    display: block;
+}
+#buttons{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 380px;
+    right: 140px;
+}
+.sp{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.sp:hover{
+    background-color: #00a1d6;
+}
